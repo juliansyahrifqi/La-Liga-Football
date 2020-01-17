@@ -1,0 +1,23 @@
+{
+    "name": "La Liga Dicoding",
+    "short_name": "La Liga",
+    "description": "Aplikasi PWA Klasemen La Liga",
+    "start_url": "/index.html",
+    "theme_color": "#283593",
+    "background_color": "#283593",
+    "display": "standalone",
+    "icons": [
+        {
+            "src": "/img/laliga512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "/img/laliga192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        }
+    ],
+
+    "gcm_sender_id": "1076229439299"
+}

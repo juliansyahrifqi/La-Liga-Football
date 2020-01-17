@@ -1,0 +1,10 @@
+.icon-team {
+    height: 50px;
+}
+
+.card .card-image img {
+    height:  200px;
+    width: 250px;
+    padding: 15px;
+    margin: 0 auto;
+}

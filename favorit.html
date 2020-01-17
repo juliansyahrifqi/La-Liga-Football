@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="La Liga">
+    <meta name="theme-color" content="#283593">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="/img/laliga192-apple.png">
+    <script type="text/javascript" src="js/idb/idb.js"></script>
+    <title>La Liga | Pertandingan Favorit</title>
+</head>
+
+<body>
+    <!-- Navigasi -->
+    <nav role="navigation" class="indigo darken-4">
+        <div class="nav-wrapper container">
+            <a href="#" class="brand-logo" id="logo-container"> La Liga</a>
+            <a href="#" class="sidenav-trigger" data-target="nav-mobile"> ☰</a>
+
+            <ul class="topnav right hide-on-med-and-down"></ul>
+            <ul class="sidenav" id="nav-mobile"></ul>
+        </div>
+    </nav>
+    <!-- Akhir navigasi -->
+
+    <div class="container">
+        <div class="row">
+            <h2 class="center-align"> Pertandingan Favorit </h2>
+            <div class="container" id="list-pertandingan"></div>
+        </div>
+    </div>
+
+    <script src="js/materialize.min.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/registsw.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/db.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            dbGetPertandinganFavorit();
+        });
+    </script>
+</body>
+
+</html>
