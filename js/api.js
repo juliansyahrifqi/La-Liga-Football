@@ -107,7 +107,11 @@ function getKlubById() {
     var urlParams = new URLSearchParams(window.location.search);
     var idParam = urlParams.get("id");
     
-    fetchApi(base_url + "teams" + idParam)
+    fetch("https://api.football-data.org/v2/teams/" + idParam, {
+        headers: new Headers({
+            'X-Auth-Token': token
+        })
+    })
     .then(status)
     .then(json)
     .then(function(data) {
